@@ -21,7 +21,6 @@ The server will start running on port 8000 by default.
 
 You can access the server by opening a web browser and navigating to [http://localhost:8000] in your web browser.
 
-#Deployement Process
 # Deployment Process
 
 This project is deployed on an AWS EC2 instance. 
