@@ -20,26 +20,48 @@ The server will start running on port 8000 by default.
 ## Accessing the Server
 
 You can access the server by opening a web browser and navigating to [http://localhost:8000] in your web browser.
-## Endpoints
-1. Add book(post) - 35.154.25.31:8000/books/add-book
-{
-    "title":"test",
-    "summary" : "test add book api",
-    "author" : "arun"
-}
+## API Endpoints
 
-2. Get books list(get) - 35.154.25.31:8000/books/get-book
+### 1. Add Book (POST)
+- **Endpoint:** `POST 35.154.25.31:8000/books/add-book`
+- **Description:** Add a new book to the database.
+- **Request Body:**
+  ```json
+  {
+    "title": "test",
+    "summary": "test add book API",
+    "author": "arun"
+  }
 
-3. Get book by id(get) - 35.154.25.31:8000/books/get-book?&id=65412a486e98e5825f7610f9
+### 2. Get Books List (GET)
 
-4. Update book(patch) - 35.154.25.31:8000/books/update-book/65412a486e98e5825f7610f9
-{
-    "title":"test",
-    "summary" : "test add book api",
-    "author" : "arun"
-}
+- **Endpoint:** `GET 35.154.25.31:8000/books/get-book`
+- **Description:** Retrieve a list of all books in the database.
 
-5. Delete book(delete) - 35.154.25.31:8000/books/delete-book/65412a486e98e5825f7610f9
+### 3. Get Book by ID (GET)
+
+- **Endpoint:** `GET 35.154.25.31:8000/books/get-book`
+- **Description:** Retrieve a book by its ID.
+- **Query Parameters:**
+        id : The ID of the book, e.g., 65412a486e98e5825f7610f9
+
+
+### 4. Update Book (PATCH)
+
+ - **Endpoint:** `PATCH 35.154.25.31:8000/books/update-book/65412a486e98e5825f7610f9`
+ - **Description:** Update the details of a specific book.
+ - **Request Body:**
+   ```json
+   {
+     "title":"test",
+     "summary" : "test add book api",
+     "author" : "arun"
+   }
+
+ ### 5. Delete Book (DELETE)
+
+   - **Endpoint:**  `DELETE 35.154.25.31:8000/books/delete-book/65412a486e98e5825f7610f9`
+   - **Description:** Delete a book from the database by its ID.
 
 # Deployment Process
 
