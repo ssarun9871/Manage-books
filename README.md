@@ -40,7 +40,7 @@ You can access the server by opening a web browser and navigating to [http://loc
 
 ### 3. Get Book by ID (GET)
 
-- **Endpoint:** `GET 35.154.25.31:8000/books/get-book`
+- **Endpoint:** `GET 35.154.25.31:8000/books/get-book?&id=65412a486e98e5825f7610f9`
 - **Description:** Retrieve a book by its ID.
 - **Query Parameters:**
         id : The ID of the book, e.g., 65412a486e98e5825f7610f9
