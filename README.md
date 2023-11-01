@@ -20,6 +20,26 @@ The server will start running on port 8000 by default.
 ## Accessing the Server
 
 You can access the server by opening a web browser and navigating to [http://localhost:8000] in your web browser.
+## Endpoints
+1.Add book(post) - 35.154.25.31:8000/books/add-book
+{
+    "title":"test",
+    "summary" : "test add book api",
+    "author" : "arun"
+}
+
+2.Get books list(get) - 35.154.25.31:8000/books/get-book
+
+3.Get book by id(get) - 35.154.25.31:8000/books/get-book?&id=65412a486e98e5825f7610f9
+
+4.Update book(patch) - 35.154.25.31:8000/books/update-book/65412a486e98e5825f7610f9
+{
+    "title":"test",
+    "summary" : "test add book api",
+    "author" : "arun"
+}
+
+5.Delete book(delete) - 35.154.25.31:8000/books/delete-book/65412a486e98e5825f7610f9
 
 # Deployment Process
 
